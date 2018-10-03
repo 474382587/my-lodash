@@ -7,6 +7,9 @@
  */
 
 function chunk(arr, size) {
+  if(!Array.isArray(arr)) {
+    throw 'This is not an array!'
+  }
   if (isNaN(size) || size < 1) {
     return arr;
   }
