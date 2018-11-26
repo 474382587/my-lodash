@@ -17,7 +17,9 @@ function _concat() {
   var args = [].slice.apply(arguments)
   
   if (args[0] && Array.isArray(args[0])) {
-    var result = args[0] // should use deep copy, will do this later
+    // var result = args[0] // should use deep copy, will do this later
+    // a "cheat" version deep copy for common situation
+    result = JSON.parse(JSON.stringify(args[0]))
     var index = 1
     while (index < args.length) {
       if (Array.isArray(args[index])) {
