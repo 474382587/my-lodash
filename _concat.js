@@ -13,10 +13,9 @@ _.chunk(['a', 'b', 'c', 'd'], 3);
 // => [['a', 'b', 'c'], ['d']]
  */
 
- 
 function _concat() {
   var args = [].slice.apply(arguments)
-  
+
   if (args[0] && Array.isArray(args[0])) {
     // var result = args[0] // should use deep copy, will do this later
     // a "cheat" version deep copy for common situation
