@@ -1,0 +1,67 @@
+/*  */
+.architecture {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  .rect {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 90px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    text-justify: auto;
+    word-break:keep-all;
+    border: 2px solid #999;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px #e3e3e3;
+    &:hover {
+      background-color: #f9f9f9;
+      cursor: pointer;
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 1px;
+      background-color: #666;
+      position: absolute;
+      left: calc(100% + 2px);
+    } 
+  }
+
+  .rect1 {
+    top: 25px;
+    left: 20px;
+  }
+  .rect2 {
+    top: 135px;
+    left: 20px;
+  }
+  .rect3 {
+    top: 245px;
+    left: 20px;
+  }
+  .rect4 {
+    top: 355px;
+    left: 20px;
+  }
+  .rect5 {
+    top: 465px;
+    left: 20px;
+  }
+  .vert_1 {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    display: block;
+    width: 1px;
+    height: 30px;
+    background-color: #666;
+  }
+}

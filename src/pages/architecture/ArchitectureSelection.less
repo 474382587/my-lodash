@@ -1,0 +1,43 @@
+.subtitle {
+  margin-bottom: 1rem;
+}
+
+.infoContainer {
+  display: flex;
+  .imageContent {
+    flex: 3;
+  }
+  .textContent {
+    flex: 4;
+    padding: 0 1rem;
+  }
+}
+
+.stepsContainer {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contentContainer {
+  pre {
+    position: relative;
+    padding: 1rem;
+    background-color: #e3e3e3;
+    .copyButton {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #f3f3f3;
+      border: 2px solid #e1e1e1;
+      &:hover {
+        background-color: #eaeaea;
+        cursor: pointer;
+      }
+    }
+  }
+}
